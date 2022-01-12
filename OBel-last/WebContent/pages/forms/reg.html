@@ -1,0 +1,480 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+	name="viewport">
+<title>제품등록</title>
+<!-- Favicon-->
+<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+<!-- Google Fonts -->
+<link
+	href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext"
+	rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet" type="text/css">
+
+<!-- Bootstrap Core Css -->
+<link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Waves Effect Css -->
+<link href="../../plugins/node-waves/waves.css" rel="stylesheet" />
+
+<!-- Animation Css -->
+<link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
+
+<!-- Sweet Alert Css -->
+<link href="../../plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+
+<!-- Custom Css -->
+<link href="../../css/style-res.css" rel="stylesheet">
+
+<!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+<link href="../../css/themes/all-themes.css" rel="stylesheet" />
+<link rel="icon" href="../../img/obel-logo.PNG" type="image/png">
+<link rel="stylesheet" href="../../vendors/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="../../vendors/fontawesome/css/all.min.css">
+<link rel="stylesheet"
+	href="../../vendors/themify-icons/themify-icons.css">
+<link rel="stylesheet" href="../../vendors/nice-select/nice-select.css">
+<link rel="stylesheet"
+	href="../../vendors/owl-carousel/owl.theme.default.min.css">
+<link rel="stylesheet"
+	href="../../vendors/owl-carousel/owl.carousel.min.css">
+<link rel="stylesheet" href="../../css/index.css">
+</head>
+<style>
+#imgreg {
+	width: 100%;
+	height: 30%;
+}
+
+</style>
+<body class="theme-teal">
+	<!-- Page Loader -->
+	<div class="page-loader-wrapper">
+		<div class="loader">
+			<div class="preloader">
+				<div class="spinner-layer pl-red">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div>
+					<div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- #END# Page Loader -->
+	<!-- Overlay For Sidebars -->
+	<div class="overlay"></div>
+	<!-- #END# Overlay For Sidebars -->
+	<!-- Search Bar -->
+	<div class="search-bar">
+		<div class="search-icon">
+			<i class="material-icons">search</i>
+		</div>
+		<input type="text" placeholder="START TYPING...">
+		<div class="close-search">
+			<i class="material-icons">close</i>
+		</div>
+	</div>
+	<!-- #END# Search Bar -->
+	<!-- Top Bar -->
+	<header class="header_area"
+		; style="position: fixed; top: 0; background-color: white;">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<a class="navbar-brand logo_h" href="../../index.html"><img
+						src="../../img/obel-logo.PNG" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse offset"
+						id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+							<li class="nav-item active"><a class="nav-link"
+								href="../../index.html">Home</a></li>
+							<li class="nav-item submenu dropdown"><a href="#"
+								class="nav-link dropdown-toggle" data-toggle="dropdown"
+								role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link"
+										href="../../category.html">Shop Category</a></li>
+									<li class="nav-item"><a class="nav-link">Shopping Cart</a></li>
+								</ul></li>
+							<li class="nav-item submenu dropdown"><a href="#"
+								class="nav-link dropdown-toggle" data-toggle="dropdown"
+								role="button" aria-haspopup="true" aria-expanded="false">History</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="">"OBel"
+											etymology</a></li>
+									<li class="nav-item"><a class="nav-link" href="">"OBel"
+											History</a></li>
+								</ul></li>
+						</ul>
+
+
+
+
+						<ul class="nav-shop">
+							<li class="nav-item"><button>
+									<i class="ti-search"></i>
+								</button></li>
+							<li class="nav-item"><button>
+									<i class="ti-shopping-cart"></i><span class="nav-shop__circle">3</span>
+								</button></li>
+
+							<li class="nav-item submenu dropdown"><a href="#"
+								class="nav-link dropdown-toggle" data-toggle="dropdown"
+								role="button" aria-haspopup="true" aria-expanded="false">Login
+							</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link"
+										href="../../login.html">Login</a></li>
+									<li class="nav-item"><a class="nav-link"
+										href="../../register.html">Register</a></li>
+								</ul>
+							<li class="nav-item"><a class="nav-link" href="reg.html"><img
+									src="../../img/join.jpg" width="20px" height="20px"></a></li>
+
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- #Top Bar -->
+	<section>
+		<!-- Left Sidebar -->
+		<aside id="leftsidebar" class="sidebar">
+			<!-- User Info -->
+			<div class="user-info">
+				<img alt="" src="../../img/premium-icon-wristwatch-5173799.png"
+					style="width: 100px; height: 100px; float: left;">
+				<div class="info-container">
+					<div class="name" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false" style="color: black">판매자</div>
+					<div class="email" style="color: black">seller@naver.com</div>
+				</div>
+			</div>
+			<!-- #User Info -->
+			<!-- Menu -->
+			<div class="menu">
+				<ul class="list">
+					<li class="header" style="background-color: white;">네비게이션</li>
+					<li><a href="../../index.html"> <i class="material-icons">home</i>
+							<span>메인화면</span>
+					</a></li>
+					<li><a href="../../pages/forms/reg.html"> <i
+							class="material-icons">text_fields</i> <span>제품등록</span>
+					</a></li>
+
+					<ul class="ml-menu">
+						<li class="active"><a
+							href="../../pages/forms/form-wizard.html"></a></li>
+					</ul>
+	</section>
+
+	<section class="content">
+		<div class="container-fluid">
+			<div class="block-header">
+				<h2>제품 등록</h2>
+			</div>
+
+			<!-- File Upload | Drag & Drop OR With Click & Choose -->
+			<div class="row clearfix">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="card">
+						<img id="imgreg" alt="" src="../../img/reg.png">
+
+						<div class="body" style="text-align: center;">
+							<form action="/" id="frmFileUpload" class="dropzone"
+								method="post" enctype="multipart/form-data">
+								<div class="dz-message">
+									<div class="drag-icon-cph">
+										<i class="material-icons">touch_app</i>
+									</div>
+									<h3>등록할 사진을 첨부해 주세요</h3>
+								</div>
+								<div class="fallback">
+									<input name="file" type="file" multiple />
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Advanced Form Example With Validation -->
+			<div class="row clearfix">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="card">
+						<div class="header">			
+							<h2>제품 정보 등록</h2>
+						</div>
+						<div class="body">
+							<form id="wizard_with_validation" method="POST">
+								<h3>판매자 정보 입력</h3>
+								<fieldset>
+									<div class="form-group form-float">
+										<div class="form-line">
+											<input type="text" class="form-control" name="username"
+												required> <label class="form-label">아이디*</label>
+										</div>
+									</div>
+									<div class="form-group form-float">
+										<div class="form-line">
+											<input type="password" class="form-control" name="password"
+												id="password" required> <label class="form-label">비밀번호*</label>
+										</div>
+									</div>
+									<div class="form-group form-float">
+										<div class="form-line">
+											<input type="password" class="form-control" name="confirm"
+												required> <label class="form-label"> 비밀번호확인*</label>
+										</div>
+									</div>
+								</fieldset>
+
+								<h3>상품 일반 정보 입력</h3>
+								<fieldset>
+									<div class="form-group form-float">
+										<div class="form-line">
+											<input type="text" name="name" class="form-control" required>
+											<label class="form-label">제품번호*</label>
+										</div>
+									</div>
+									<div class="form-group form-float">
+										<div class="form-line">
+											<input type="text" name="name" class="form-control">
+											<label class="form-label">업체명</label>
+										</div>
+									</div>
+									<div class="form-group form-float">
+										<div class="form-line">
+											<input type="tel" name="name" class="form-control"> <label
+												class="form-label">전화번호</label>
+										</div>
+									</div>
+									<div class="form-group form-float">
+										<div class="form-line">
+											<input type="text" name="name" class="form-control">
+											<label class="form-label">제품명</label>
+										</div>
+									</div>
+									<div class="form-group form-float">
+										<div class="form-line">
+											<input type="text" name="name" class="form-control">
+											<label class="form-label">택배사</label>
+										</div>
+									</div>
+									<div class="form-group form-float">
+										<div class="form-line">
+											<input type="text" name="name" class="form-control">
+											<label class="form-label">등록수량</label>
+										</div>
+									</div>
+									<div class="form-group form-float">
+										<div class="form-line">
+											<input type="text" name="name" class="form-control">
+											<label class="form-label">가격</label>
+										</div>
+									</div>
+									<div class="form-group form-float">
+										<div class="form-line">
+											<input type="email" name="email" class="form-control"
+												required> <label class="form-label">Email*</label>
+										</div>
+									</div>
+									<div class="form-group form-float">
+										<div class="form-line">
+											<textarea name="address" cols="30" rows="3"
+												class="form-control no-resize" required></textarea>
+											<label class="form-label">반품주소*</label>
+										</div>
+									</div>
+								</fieldset>
+
+								<h3>약관 동의</h3>
+								<fieldset>
+									<input id="acceptTerms-2" name="acceptTerms" type="checkbox"
+										required> <label for="acceptTerms-2">약관내용</label>
+									<p>
+										제1장 총칙<br> 제1조(목적) 이 약관은 회사가 온라인으로 제공하는 디지털콘텐츠(이하 "콘텐츠"라고
+										한다) 및 제반서비스의 이용과 관련하여 회사와 이용자와의 권리, 의무 및 책임사항 등을 규정함을 목적으로
+										합니다.<br> 제2조(정의) 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+
+										1. "회사"라 함은 "콘텐츠" 산업과 관련된 경제활동을 영위하는 자로서 콘텐츠 및 제반서비스를 제공하는 자를
+										말합니다.<br> 2. "이용자"라 함은 "회사"의 사이트에 접속하여 이 약관에 따라 "회사"가
+										제공하는 "콘텐츠" 및 제반서비스를 이용하는 회원 및 비회원을 말합니다.<br> 3. "회원"이라 함은
+										"회사"와 이용계약을 체결하고 "이용자" 아이디(ID)를 부여받은 "이용자"로서 "회사"의 정보를 지속적으로
+										제공받으며 "회사"가 제공하는 서비스를 지속적으로 이용할 수 있는 자를 말합니다.<br> 4.
+										"비회원"이라 함은 "회원"이 아니면서 "회사"가 제공하는 서비스를 이용하는 자를 말합니다.<br>
+
+										5. "콘텐츠"라 함은 정보통신망이용촉진 및 정보보호 등에 관한 법률 제2조 제1항 제1호의 규정에 의한
+										정보통신망에서 사용되는 부호·문자·음성·음향·이미지 또는 영상 등으로 표현된 자료 또는 정보로서, 그 보존 및
+										이용에 있어서 효용을 높일 수 있도록 전자적 형태로 제작 또는 처리된 것을 말합니다.<br> 6.
+										"아이디(ID)"라 함은 "회원"의 식별과 서비스이용을 위하여 "회원"이 정하고 "회사"가 승인하는 문자 또는
+										숫자의 조합을 말합니다.<br> 7. "비밀번호(PASSWORD)"라 함은 "회원"이 부여받은
+										"아이디"와 일치되는 "회원"임을 확인하고 비밀보호를 위해 "회원" 자신이 정한 문자 또는 숫자의 조합을
+										말합니다.<br> 제3조(신원정보 등의 제공) "회사"는 이 약관의 내용, 상호, 대표자 성명, 영업소
+										소재지 주소(소비자의 불만을 처리할 수 있는 곳의 주소를 포함), 전화번호, 모사전송번호, 전자우편주소,
+										사업자등록번호, 통신판매업 신고번호 및 개인정보관리책임자 등을 이용자가 쉽게 알 수 있도록 온라인
+										서비스초기화면에 게시합니다. 다만, 약관은 이용자가 연결화면을 통하여 볼 수 있도록 할 수 있습니다.<br>
+
+										제4조(약관의 게시 등) ① "회사"는 이 약관을 "회원"이 그 전부를 인쇄할 수 있고 거래과정에서 해당 약관의
+										내용을 확인할 수 있도록 기술적 조치를 취합니다.<br> ② "회사"는 "이용자"가 "회사"와 이
+										약관의 내용에 관하여 질의 및 응답할 수 있도록 기술적 장치를 설치합니다.<br> ③ "회사"는
+										"이용자"가 약관에 동의하기에 앞서 약관에 정하여져 있는 내용 중 청약철회, 환불조건 등과 같은 중요한 내용을
+										이용자가 쉽게 이해할 수 있도록 별도의 연결화면 또는 팝업화면 등을 제공하여 "이용자"의 확인을 구합니다.<br>
+
+										제5조(약관의 개정 등) ① "회사"는 온라인 디지털콘텐츠산업 발전법, 전자상거래 등에서의 소비자보호에 관한
+										법률, 약관의 규제에 관한 법률 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.<br>
+
+										② "회사"가 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 서비스초기화면에 그
+										적용일자 7일 이전부터 적용일 후 상당한 기간동안 공지하고, 기존회원에게는 개정약관을 전자우편주소로 발송합니다.<br>
+
+										③ "회사"가 약관을 개정할 경우에는 개정약관 공지 후 개정약관의 적용에 대한 "이용자"의 동의 여부를
+										확인합니다. "이용자"가 개정약관의 적용에 동의하지 않는 경우 "회사" 또는 "이용자"는 콘텐츠 이용계약을
+										해지할 수 있습니다. 이때, "회사"는 계약해지로 인하여 "이용자"가 입은 손해를 배상합니다.<br>
+
+										제6조(약관의 해석) 이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 온라인 디지털콘텐츠산업
+										발전법, 전자상거래 등에서의 소비자보호에 관한 법률, 약관의 규제에 관한 법률, 문화체육관광부장관이 정하는
+										디지털콘텐츠이용자보호지침, 기타 관계법령 또는 상관례에 따릅니다.
+									</p>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- #END# Advanced Form Example With Validation -->
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer-area">
+			<div class="container">
+				<div class="row section_gap">
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets">
+							<h4 class="footer_title large_title">Prod by</h4>
+							<p>조장 : 이승현</p>
+							<p>조원 : 이희성, 황태경, 최민석</p>
+							<p>메인 페이지 : 최민석</p>
+							<p>상세 페이지 : 황태경</p>
+							<p>로그인/회원가입 페이지 : 이승현</p>
+							<p>등록 페이지 : 이희성</p>
+						</div>
+					</div>
+					<div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets">
+							<h4 class="footer_title">Quick Links</h4>
+							<ul class="list">
+								<li><a href="../../index.html">Home</a></li>
+								<li><a href="../../category.html">Shop</a></li>
+								<li><a href="#">History</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets">
+							<h4 class="footer_title">SNS Link</h4>
+							<ul class="list">
+								<li><a href="">KaKaoTalk</a></li>
+								<li><a href="">FaceBook</a></li>
+								<li><a href="">Instargram</a></li>
+								<li><a href="">YouTube</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets">
+							<h4 class="footer_title">Contact Us</h4>
+							<div class="ml-40">
+								<p class="sm-head">
+									<span class="fa fa-location-arrow"></span> Head Office
+								</p>
+								<p>학익동 663-1번지 5층 남구 인천광역시 KR</p>
+
+								<p class="sm-head">
+									<span class="fa fa-phone"></span> Phone Number
+								</p>
+								<p>
+									+032-876-3332 <br> +32 010 1234 5678
+								</p>
+
+								<p class="sm-head">
+									<span class="fa fa-envelope"></span> Email
+								</p>
+								<p>
+									http://www.ICIA.co.kr/ <br> openTeam5@icia.co.kr
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row d-flex">
+					<p class="col-lg-12 footer-text text-center">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>
+							document.write(new Date().getFullYear());
+						</script>
+						All rights reserved | This template is made with <i
+							class="fa fa-heart" aria-hidden="true"></i> by <a
+							href="https://colorlib.com" target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Jquery Core Js -->
+	<script src="../../plugins/jquery/jquery.min.js"></script>
+
+	<!-- Bootstrap Core Js -->
+	<script src="../../plugins/bootstrap/js/bootstrap.js"></script>
+
+	<!-- Select Plugin Js -->
+	<script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+	<!-- Slimscroll Plugin Js -->
+	<script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+	<!-- Jquery Validation Plugin Css -->
+	<script src="../../plugins/jquery-validation/jquery.validate.js"></script>
+
+	<!-- JQuery Steps Plugin Js -->
+	<script src="../../plugins/jquery-steps/jquery.steps.js"></script>
+
+	<!-- Sweet Alert Plugin Js -->
+	<script src="../../plugins/sweetalert/sweetalert.min.js"></script>
+
+	<!-- Waves Effect Plugin Js -->
+	<script src="../../plugins/node-waves/waves.js"></script>
+
+	<!-- Custom Js -->
+	<script src="../../js/admin.js"></script>
+	<script src="../../js/pages/forms/form-wizard.js"></script>
+
+	<!-- Demo Js -->
+	<script src="../../js/demo.js"></script>
+	<!-- Dropzone Plugin Js -->
+	<script src="../../plugins/dropzone/dropzone.js"></script>
+</body>
+</html>
